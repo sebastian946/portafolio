@@ -1,0 +1,126 @@
+.container1{
+  transform: translateY(303px);
+  background-color: white;
+  width: 100.2%;
+  height: 100%;
+  padding: 5em;
+  overflow: hidden;
+}
+.container1 .title{
+  text-align: center;
+  overflow: hidden;
+}
+.container1 .title h1{
+  position: relative;
+  font-weight: bolder;
+  font-size: 47px;
+  overflow: hidden;
+}
+.container1 .title hr{
+  width: 5%;
+  transform: translateX(46em);
+  border-width: 7px;
+  border-radius: 10px;
+  border-color: #268ed3;
+  margin: 20px 0;
+  overflow: hidden;
+}
+.container1 .content{
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.container1 .content .personal-information h2{
+  font-weight: 900;
+  overflow: hidden;
+}
+.container1 .content .personal-information .personal-text{
+  margin-right: 15px;
+  text-align: justify;
+  overflow: hidden;
+}
+.container1 .content .personal-information .personal-text p{
+  font-size: 22px;
+  overflow: hidden;
+}
+.container1 .content .tecnology{
+  padding: 20px;
+  overflow: hidden;
+}
+.container1 .content .tecnology h2{
+  font-weight: 900;
+  transform: translateX(2px);
+  overflow: hidden;
+}
+.container1 .content .tecnology .content-tecnology{
+  display: flex;
+  align-items: center;
+}
+.container1 .content .tecnology .box-content{
+  border: solid #3498DB 0.5px;
+  padding: 10px;
+  margin: 4px;
+  width: 150px;
+  border-radius: 13px;
+  background-color: #3498DB;
+  box-shadow: 10px 5px 5px 0 #dadada;
+}
+.container1 .content .tecnology .box-content h4{
+  color: white;
+}
+
+@media only screen and (min-width: 250px) and (max-width: 855px){
+  .container1{
+    width: 59em;
+  }
+  .container1 .title hr{
+    transform: translateX(24em);
+  }
+  .container1 .content .tecnology{
+    padding-right: 5px;
+    margin-right: 5px;
+    width: 20em;
+    overflow: visible;
+  }
+  .container1 .content .tecnology .content-tecnology{
+    display: block;
+  }
+  .container1 .title h1{
+    font-size: 55px;
+  }
+  .container1 .content .personal-information .personal-text p{
+    font-size: 32px;
+  }
+  .container1 .content .personal-information h2{
+    font-size: 40px;
+  }
+  .container1 .content .tecnology h2{
+    font-size: 45px;
+  }
+  .container1 .content .tecnology .box-content{
+    width: 200px;
+  }
+  .container1 .content .tecnology .box-content h4{
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 840px) and (max-width: 1200px){
+  .container1{
+    width: 74em;
+    overflow: hidden;
+  }
+  .container1 .title hr{
+    transform: translateX(32em);
+  }
+  .container1 .content .tecnology .content-tecnology{
+    display: block;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1870px) {
+  .container1{
+    width: 108em;
+    overflow: hidden;
+  }
+}

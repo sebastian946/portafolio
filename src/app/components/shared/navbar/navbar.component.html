@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Jhoan Sebastian Duque Zapata</a>
+    <div class="responsive-navbar">
+
+      <div class="d-flex me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav" [ngClass]="{'show': isOpen}" [@menuAnimation]="isOpen ? 'open' : 'close'">
+          <li class="nav-item"><a class="nav-link" (click)="scrollToSection('aboutme')"
+              href="javascript:void(0)">About me</a></li>
+          <li class="nav-item"><a class="nav-link" (click)="scrollToSection('experiences')"
+              href="javascript:void(0)">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" (click)="scrollToSection('introduction')"
+              href="javascript:void(0)">Introduction</a></li>
+          <!--<li class="nav-item"><a class="nav-link" href="#">Projects</a></li>-->
+          <li class="nav-item"><a class="nav-link" (click)="scrollToSection('study')"
+              href="javascript:void(0)">Study</a></li>
+        </ul>
+        <button class="navbar-toggler responsive-menu-button" type="button" (click)="toggleMenu()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

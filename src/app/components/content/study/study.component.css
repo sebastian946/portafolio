@@ -1,0 +1,125 @@
+.container-main{
+  transform: translateY(600px);
+  background-color: white;
+  padding: 60px;
+}
+.container-main .title{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 47px;
+}
+.container-main hr{
+  width: 8%;
+  color: white;
+  transform: translateX(46em);
+  border-width: 7px;
+  border-radius: 10px;
+  border-color: #268ed3;
+  margin: 20px 0;
+}
+.container-main .content{
+  margin: 0 120px 120px 120px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-main .content .content-image{
+  border: solid white;
+  margin: 7px;
+  background-color: white;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.container-main .content .content-image img{
+  width: 20em;
+}
+.container-main .content .content-image .description-experience{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: height 0.3s ease-in-out;
+  color: white;
+  align-items: center;
+}
+.container-main .content .content-image .description-experience .title{
+  text-align: center;
+  align-items: center;
+}
+.container-main .content .content-image .description-experience .title h5{
+  font-weight: bolder;
+  font-size: 25px;
+}
+.container-main .content .content-image:hover .description-experience{
+  align-items: center;
+  height: 100%;
+  padding: 15px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 840px){
+  .container-main{
+    width: 58.8em;
+  }
+  .container-main hr{
+    transform: translateX(23em);
+  }
+  .container-main .content .content-image img{
+    width: 100%;
+  }
+  .container-main .content .content-image{
+    width: 150%;
+  }
+  .container-main .content .content-image .description-experience .title h5{
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  .container-main .content .content-image .description-experience .description{
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 840px) and (max-width: 1200px){
+  .container-main{
+    width: 74em;
+  }
+  .container-main hr{
+    transform: translateX(23em);
+  }
+  .container-main .content .content-image img{
+    width: 100%;
+  }
+  .container-main .content .content-image{
+    width: 150%;
+  }
+  .container-main .content .content-image .description-experience .title h5{
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  .container-main .content .content-image .description-experience .description{
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1725px){
+  .container-main{
+    width: 108em;
+  }
+  .container-main hr{
+    transform: translateX(45em);
+  }
+  .container-main .content .content-image img{
+    width: 100%;
+  }
+  .container-main .content .content-image{
+    width: 150%;
+  }
+  .container-main .content .content-image .description-experience .title h5{
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  .container-main .content .content-image .description-experience .description{
+    font-size: 28px;
+  }
+}
+
